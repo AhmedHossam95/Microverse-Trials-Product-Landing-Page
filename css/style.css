@@ -1,25 +1,29 @@
 html {
-  padding: 10px;
+  width: 100%;
 }
 #header {
+  position: fixed;
+  top: 0px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  min-height: 25px;
 }
 #header-img {
-  width: auto;
+  width: 350px;
   height: 50px;
 }
-#nav-bar {
-  position: absolute;
-  right: 20px;
-}
 a {
-  margin: 50px;
+  margin: 25px;
   text-decoration: none;
   font-size: 25px;
   color: black;
 }
 .content {
+  margin-top: 80px;
   text-align: center;
 }
 #form {
@@ -61,23 +65,36 @@ i {
   margin-inline-start: 40px;
 }
 
-#video{
-    margin-block:40px;
+#video {
+  margin-block: 40px;
 }
 
-#pricing{
-    display: flex;
-    flex-direction: row;
-    margin: 25px;
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  justify-content: center;
 }
-.price-tag{
-    border: olid 1px black;
-    padding: 5px;
-    margin: 25px;
+.price-tag {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 25px;
 }
 
-@media (max-width: 600px){
-    #pricing{
-        flex-direction: column;
-    }
+@media only screen and (max-width: 600px) {
+  #pricing {
+    flex-direction: column;
+  }
+  a {
+    font-size: 14px;
+    margin: 5px;
+  }
+  iframe {
+    width: 400px;
+    height: 350px;
+  }
+  #header-img {
+    width: 200px;
+    height: auto;
+  }
 }
