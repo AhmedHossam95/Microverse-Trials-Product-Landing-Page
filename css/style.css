@@ -1,21 +1,66 @@
-html{
-    padding: 10px;
+html {
+  padding: 10px;
 }
-#header{
-    display: flex;
-    flex-direction: row;
-    background-color: aquamarine;
+#header {
+  display: flex;
+  flex-direction: row;
 }
-#header-img{
-    width: auto;
-    height: 50px;
+#header-img {
+  width: auto;
+  height: 50px;
 }
-#nav-bar{
-    position: absolute;
-    right: 20px;
+#nav-bar {
+  position: absolute;
+  right: 20px;
 }
-a{
-    margin: 10px;
-    text-decoration: none;
-    font-size: 25px;
+a {
+  margin: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+.content {
+  text-align: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin-block: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#submit {
+  border: none;
+  width: 170px;
+  height: 40px;
+  background-color: rgb(143, 143, 0);
+  text-transform: uppercase;
+  color: white;
+}
+i {
+  color: orange;
+  font-size: 70px;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.feature-text {
+  text-align: start;
+  margin-inline-start: 40px;
+}
+
+#video{
+    margin-block:40px;
 }
