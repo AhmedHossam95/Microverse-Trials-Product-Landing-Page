@@ -64,3 +64,20 @@ i {
 #video{
     margin-block:40px;
 }
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+.price-tag{
+    border: olid 1px black;
+    padding: 5px;
+    margin: 25px;
+}
+
+@media (max-width: 600px){
+    #pricing{
+        flex-direction: column;
+    }
+}
